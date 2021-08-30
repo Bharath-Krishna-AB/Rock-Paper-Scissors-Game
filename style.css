@@ -1,0 +1,13 @@
+body{
+    background: #edc0bf;
+        background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+        font-family: 'Inter', sans-serif;
+}
+
+.header{
+    width: 510px;
+    height: 150px;
+    border: solid 1px;
+    display: flex;
+}
+
