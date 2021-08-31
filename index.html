@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="header row">
-            
-        </header>
-        <body class="body row">
-            
-        </body>
+    <div class="container">
+        <div class="header-container">
+            <header class="header">
+                <div class="header-left">
+                    <img src="Assets/title.png" class='title' alt="">
+                </div>
+
+                <div class="score-board">
+                    <p>SCORE</p>
+                    <h1> 0 </h1>
+                </div>
+
+            </header>
+        </div>
+
+        <div class="body-container">
+            <section class="hands">
+                <div class="hand paper">
+                  <img src="/assets/Paper.png" onclick="pickUserHand('paper')"/>
+                </div>
+                <div class="hand scissors">
+                  <img src="/assets/Scissors.png" onclick="pickUserHand('scissors')"/>
+                </div>
+                <div class="hand rock">
+                  <img src="/assets/Rock.png" onclick="pickUserHand('rock')"/>                        
+                </div>
+        </section>
+
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
 </body>
 </html>

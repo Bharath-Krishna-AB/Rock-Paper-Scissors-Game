@@ -1,13 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     background: #edc0bf;
-        background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+         background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  ); 
         font-family: 'Inter', sans-serif;
 }
 
+.container{
+    justify-content: center;
+    padding-top: 30px;
+
+}
 .header{
-    width: 510px;
+    width: 700px;
     height: 150px;
-    border: solid 1px;
+    border-radius: 15px;
+    border: solid 1px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hands{
+    width: 510px;
+    height: 375px;
     display: flex;
 }
 
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    padding: 30px;
+}
+
+.score-board{
+        width: 150px;
+        height: 114px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+.score-board h1{
+    color: #565468;
+    font-size: 56px;
+    font-family: "Barlow", sans-serif;
+}
+
+.score-board p{
+    color: #2a45c2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    text-align: left;
+}
+
+.hands {
+    background-image: url("../assets/triangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    width: 476px;
+    height: 430px;
+    margin-top: 100px;
+    display: flex;
+    z-index: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hands img {
+    width: 150px;
+    height: 150px;
+    display: block;
+  }
+
+  .hands .paper {
+    margin-right: 20px;
+  }
+  
+  .hands .scissors {
+    margin-left: 20px;
+  }
+
+  .hands .hand {
+    cursor: pointer;
+    transition: all 0.25s;
+  }
