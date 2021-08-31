@@ -84,7 +84,7 @@ body{
     background-image: url("../assets/triangle.png");
     background-position: center;
     background-repeat: no-repeat;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
     position: relative;
     width: 476px;
@@ -113,4 +113,62 @@ body{
   .hands .hand {
     cursor: pointer;
     transition: all 0.25s;
+  }
+
+  .result-section{
+      margin-top: 50px;
+      width: 900px;
+      height: 66vh;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .result-section img{
+    width: 275px;
+    height: 275px;    
+  } 
+
+  .result-section h1{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  button{
+      color: hsl(229, 25%, 31%);
+      background-color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s;
+  }
+
+  button:hover{
+      background: rgb(218, 218, 218);
+      transform: translate3d(0px, -2px, 0px);
+  }
+
+  .userHandContainer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .computerHandContainer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .refree{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20vh;
+  }
+
+  .refree h1{
+    line-height: 60px;
+    font-size: 7vh;
   }
