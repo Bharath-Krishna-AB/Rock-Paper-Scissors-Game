@@ -1,4 +1,4 @@
-var threeHands = {paper: "/Assets/Paper.png",scissors: "/Assets/Scissors.png",rock: "/assets/Rock.png"}
+var threeHands = {paper: "./Assets/Paper.png",scissors: "./Assets/Scissors.png",rock: "./Assets/Rock.png"}
 var score= 0
 
 
