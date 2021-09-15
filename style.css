@@ -93,9 +93,9 @@ body {
   visibility: visible;
   opacity: 1;
   position: relative;
-  width: 47.6rem !important;
+  width: 47.6rem ;
   height: 43.0rem;
-  margin-top: 5rem !important;
+  margin-top: 5rem;
   display: flex;
   z-index: 0;
   flex-wrap: wrap;
@@ -192,5 +192,23 @@ body {
   @media (max-width: 768px){
     html{
       font-size: 45%;
+    }
+  }
+
+  @media (max-width: 548px){
+    html{
+      font-size: 35%;
+    }
+  }
+
+  @media (max-width: 448px){
+    html{
+      font-size: 30%;
+    }
+  }
+
+  @media (max-width: 378px){
+    html{
+      font-size: 25%;
     }
   }
