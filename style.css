@@ -112,7 +112,7 @@ body {
 }
 
 .hands .scissors {
-  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .hands .hand {
@@ -182,22 +182,61 @@ body {
     flex-direction: column;
   } 
 
+  .main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   @media (max-width: 998px) {
     html{
       font-size: 55%;
     }
+
   }
 
   @media (max-width: 768px){
     html{
       font-size: 45%;
     }
+    .hands{
+      width: 49rem ;
+      height: 47.0rem;
+    }
+
+    .hands .paper{
+      margin-right: 3rem;
+    }
+
+    .hands .scissors{
+      margin-left: 3rem;
+    }
+
   }
 
   @media (max-width: 548px){
     html{
       font-size: 35%;
+    }
+
+    .hands{
+      width: 70rem ;
+      height: 57rem;
+    }
+
+    .hands .paper{
+      margin-right: 10rem;
+    }
+
+    .hands .scissors{
+      margin-left: 10rem;
+    }
+
+    .hands .rock{
+      margin-top: 10rem;
     }
   }
 
@@ -205,10 +244,54 @@ body {
     html{
       font-size: 30%;
     }
+
+    .hands{
+      width: 75rem ;
+      height: 65rem;
+    }
+
+    .hands .paper{
+      margin-right: 12rem;
+    }
+
+    .hands .scissors{
+      margin-left: 12rem;
+    }
+
+    .hands .rock{
+      margin-top: 10rem;
+    }
+
+    .hand img{
+      width: 24.2rem;
+      height: 24.2rem;
+    }
   }
 
   @media (max-width: 378px){
     html{
       font-size: 25%;
+    }
+
+    .hands{
+      width: 66rem ;
+      height: 55rem;
+      /* background: red; */
+    }
+
+    .hand img{
+      width: 25rem;
+      height: 25rem;
+    }
+    .hands .paper{
+      margin-right: 15rem;
+    }
+
+    .hands .scissors{
+      margin-left: 15rem;
+    }
+
+    .hands .rock{
+      margin-top: 15rem;
     }
   }
